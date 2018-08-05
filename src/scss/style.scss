@@ -2,10 +2,22 @@ body {
     color: #fff;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+    @media(max-width: 34em){
+        font-size: 2em;
+    }
+}
+
 #hero {
-    background: url('assets/bg.jpg') no-repeat;
+    background: url('/assets/bg.jpg') no-repeat;
     background-size: cover;
     background-position: 0 60%;
+}
+
+.hero-img {
+    width: 80%;
 }
 
 .navbar {
@@ -39,4 +51,36 @@ body {
             color: #fff !important;
         }
     }
+}
+
+.feature-wrapper {
+    color: #000;
+}
+
+#join-container {
+    background: url('/assets/screen1.jpg') no-repeat;
+    background-size: cover;
+    h2 {
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+    h4 {
+        color: gray;
+    }
+
+    .form-control{
+        background: #111;
+        border: 3px solid #2f2f2f;
+        padding: 10px;
+
+    }
+
+    .btn {
+        font-weight: bold;
+        color: black;
+        border: none;
+        padding: 12px; 
+        cursor: pointer;
+    }
+
 }
